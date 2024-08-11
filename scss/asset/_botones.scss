@@ -1,37 +1,30 @@
-.botonUno{
-    padding: 15px 30px;
-    background: $secondary;
-    color: $primary;
-    border: 1px solid $secondary;
-    transition: all 0.3s;
-    border-radius: 30px;
-    text-decoration: none;
-
-
+.botonUno {
+  padding: 15px 30px;
+  background: $secondary;
+  color: $primary;
+  border: 1px solid $secondary;
+  transition: all 0.3s;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-.botonUno:hover{
-    background: $fondo;
-    color: $secondary;
-
+.botonUno:hover {
+  background: $fondo;
+  color: $secondary;
 }
 
-
-.botonDos{
-    padding: 15px 30px;
-    background: $fondo;
-    color: $primary;
-    border: 1px solid $fondo;
-    transition: all 0.3s;
-    border-radius: 30px;
-    text-decoration: none;
-
-
+.botonDos {
+  padding: 15px 30px;
+  background: $fondo;
+  color: $primary;
+  border: 1px solid $fondo;
+  transition: all 0.3s;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-.botonDos:hover{
-    background: $fondo;
-    color: $secondary;
-    border: 1px solid $secondary;
-
+.botonDos:hover {
+  background: $fondo;
+  color: $secondary;
+  border: 1px solid $secondary;
 }

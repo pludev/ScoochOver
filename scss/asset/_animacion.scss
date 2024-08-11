@@ -1,26 +1,26 @@
 @keyframes cuadrado {
-    0% {
-        top:0px;
-    }
-    50% {
-        top:-10px;
-    }
-
-    100% {
-        top:0px;
-    }
+  0% {
+    top: 0px;
   }
-  
-.cuadradito{
-    position: relative;
-    font-size: 2rem;
-    animation: cuadrado 2s infinite;
+  50% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
-.shadow{
-    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+.cuadradito {
+  position: relative;
+  font-size: 2rem;
+  animation: cuadrado 2s infinite;
 }
 
-.center{
-    text-align: center;
+.shadow {
+  filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+
+.center {
+  text-align: center;
 }

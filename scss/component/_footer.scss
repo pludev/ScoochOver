@@ -1,67 +1,57 @@
-footer{
-@include flex;
-justify-content: space-between;
-flex-direction: column;
-@include padding;
-background-color: $fondo;
-color: $primary;
-padding-top: 80px;
-padding-bottom: 80px;
-
+footer {
+  @include flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include padding;
+  background-color: $fondo;
+  color: $primary;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.footerF > div{
-    width: 33%;
-    @media screen and (max-width:650px) {
-        width: 100%;
-
-
-        }
-}
-.footerF{
-
+.footerF > div {
+  width: 33%;
+  @media screen and (max-width: 650px) {
     width: 100%;
-    @include flex;
-    justify-content: space-between;
-    @media screen and (max-width:1240px) {
-        flex-direction: column;
-        gap: 35px;
-
-            
-    }
-
+  }
 }
-.sepadador{
-    @include flex;
-    width: 100%;
+.footerF {
+  width: 100%;
+  @include flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1240px) {
+    flex-direction: column;
+    gap: 35px;
+  }
 }
-.line{
-
-    width: 50%;
-    color: $primary;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
+.sepadador {
+  @include flex;
+  width: 100%;
 }
-
-.logoF{
-    width: 232px;
+.line {
+  width: 50%;
+  color: $primary;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.flex-redes{
-    display: flex;
-    gap: 43px;
-    img{
-        width: 50px;
-        height: 50px;
-        fill:white;
-    }
-    svg{
-        fill:white;
-    }
-
+.logoF {
+  width: 232px;
 }
 
-.footerSubText{
-    color:$fondoCuatro;
-    font-weight: 800;
+.flex-redes {
+  display: flex;
+  gap: 43px;
+  img {
+    width: 50px;
+    height: 50px;
+    fill: white;
+  }
+  svg {
+    fill: white;
+  }
+}
+
+.footerSubText {
+  color: $fondoCuatro;
+  font-weight: 800;
 }

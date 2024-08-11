@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
-ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding: 0;
   margin: 0;
 }
@@ -33,7 +42,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6, p {
 }
 
 .tituloNombre {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 3.4rem;
   color: #9da2b3;
   font-weight: 800;
@@ -278,7 +287,8 @@ ul, li, ol, h1, h2, h3, h4, h5, h6, p {
   z-index: 1;
 }
 
-.carousel__item--left img, .carousel__item--right img {
+.carousel__item--left img,
+.carousel__item--right img {
   filter: grayscale(80%);
 }
 
@@ -410,7 +420,7 @@ ul, li, ol, h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-  background-image: url("../img/fondoMain.png");
+  background-image: url('../img/fondoMain.png');
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -448,7 +458,7 @@ main {
   flex-direction: column;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-image: url("../img/fondoTres.png");
+  background-image: url('../img/fondoTres.png');
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -490,7 +500,7 @@ main img {
 }
 
 .cont1 {
-  background-image: url("../img/fondoVideo.png");
+  background-image: url('../img/fondoVideo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -545,7 +555,7 @@ main img {
 }
 
 .cont2 {
-  background-image: url("../img/fondoVideo.png");
+  background-image: url('../img/fondoVideo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -591,7 +601,7 @@ main img {
   align-items: center;
   gap: 40px;
   background-color: #000000;
-  background-image: url("../img/fondo/fondo22.jpg");
+  background-image: url('../img/fondo/fondo22.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -720,7 +730,7 @@ main img {
 }
 
 .fondoCuatro {
-  background-image: url("../img/fondoCuatro.png");
+  background-image: url('../img/fondoCuatro.png');
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -729,7 +739,7 @@ main img {
 }
 
 .formulario {
-  background-image: url("../img/fondoCuatro.png");
+  background-image: url('../img/fondoCuatro.png');
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
