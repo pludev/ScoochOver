@@ -19,7 +19,6 @@ header {
   height: auto;
   width: 100vw;
   padding: 1em;
-  /* background: #14141a; */
   background: black;
   z-index: 1000;
 }
@@ -38,6 +37,10 @@ header li {
   font-size: 0.9rem;
 }
 
+header > a:hover {
+  background-color: transparent;
+}
+
 .logo {
   width: 200px;
   padding: 10px 6px;
@@ -46,7 +49,7 @@ header li {
 }
 
 section {
-  padding: 3em;
+  padding: 6em 3em 0em;
 }
 
 h2 {
@@ -66,21 +69,29 @@ h3 {
 p {
   color: #9da2b3;
   line-height: 1.6;
-  margin: 1em 0;
+  margin: 0.5em 0 1em 0;
 }
 
 a {
-  color: inherit;
+  color: #8eff32;
   text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 a:hover {
-  color: #8eff32;
+  background-color: #8eff32;
+  color: #000000;
+  border-radius: 2px;
+  /* text-decoration: underline; */
+  /* border-bottom: 1px solid #8eff32; */
 }
 
 a.get-in-touch {
-  font-size: 4rem;
+  display: inline-block;
+  font-size: 2rem;
   font-weight: 300;
+  margin-bottom: 1em;
 }
 
 .tituloNombre {
@@ -350,6 +361,19 @@ a.get-in-touch {
   }
 }
 
+.proyectos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.romina,
 .sergio {
   width: 100%;
   filter: drop-shadow(8px 10px 12px #000000);
