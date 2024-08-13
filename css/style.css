@@ -17,25 +17,28 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+
   width: 100vw;
   padding: 12px;
   line-height: 1;
-  z-index: 1000;
-  box-shadow: 0 0 10px #14141a99;
 
-  /* background: radial-gradient(#9977ef, #6930ff); */
-  /* background: radial-gradient(#24242a, #14141a); */
-  /* background: radial-gradient(#14141a, #24242a); */
   background: #14141ad9;
-  animation: fadeIn 1 1s ease-out;
   overflow-y: hidden;
+
+  box-shadow: 0 0 10px #14141a99;
+  z-index: 1000;
+}
+
+header::-webkit-scrollbar {
+  display: none;
 }
 
 header ul {
   margin-top: 5px;
   margin-left: 24px;
   height: 1.2em;
-  overflow: hidden;
+  white-space: nowrap;
+  overflow-y: scroll;
 }
 
 header li {
@@ -46,7 +49,7 @@ header li {
   font-size: 0.8rem;
 }
 
-header a:hover {
+header li a.on {
   border-bottom: 1px solid #8eff32 !important;
 }
 

@@ -13,20 +13,6 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-        $('header a').click(function(e) {
-          e.preventDefault()
-          var target = $(this).attr('href')
-          $('html, body').animate(
-            {
-              scrollTop: $(target).offset().top,
-            },
-            400
-          )
-        })  
-      })
-    </script>
 
     <title>
       Scooch Over Films • Le hacemos espacio a historias que merecen ser
@@ -43,7 +29,7 @@
       <div>
         <ul class="navbar">
           <li>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#proyectos" class="on">Proyectos</a>
           </li>
           <li>
             <a href="#equipo">Equipo</a>
@@ -244,5 +230,40 @@
         >
       </p>
     </footer>
+
+    <script>
+      $(function () {
+        $('header li a').click(function (e) {
+          e.preventDefault();
+          // scroll-y
+          var target = $(this).attr('href');
+          $('html, body').animate(
+            {
+              scrollTop: $(target).offset().top,
+            },
+            400
+          );
+          // scroll-x
+          if (target == '#proyectos') {
+            $('header').animate(
+              {
+                scrollLeft: 0,
+              },
+              200
+            );
+          } else {
+            $('header').animate(
+              {
+                scrollLeft: 188,
+              },
+              200
+            );
+          }
+          // highlight nav
+          $('header li a').removeClass('on');
+          $(this).addClass('on');
+        });
+      });
+    </script>
   </body>
 </html>
