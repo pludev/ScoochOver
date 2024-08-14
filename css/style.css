@@ -209,7 +209,7 @@ footer {
   justify-content: space-between;
   flex-direction: column;
 
-  padding: 0 1em 50vh;
+  padding: 1em 1em 50vh;
 
   color: #f5f6fc;
 }
