@@ -195,7 +195,7 @@
       <div><img src="" class="romina" /></div>
     </section>
 
-    <div id="contactanos" class="divider">
+    <div id="contactanos" class="divider" style="padding-top: 100px;">
       <span></span>
     </div>
 
@@ -233,17 +233,18 @@
 
     <script>
       $(function () {
+        // scroll trigger
         $('header li a').click(function (e) {
           e.preventDefault();
-          // scroll-y
+          // content
           var target = $(this).attr('href');
           $('html, body').animate(
             {
-              scrollTop: $(target).offset().top,
+              scrollTop: $(target).offset().top - 50,
             },
-            400
+            600
           );
-          // scroll-x
+          // header nav
           if (target == '#proyectos') {
             $('header').animate(
               {
@@ -256,12 +257,36 @@
               {
                 scrollLeft: 188,
               },
-              200
+              600
             );
           }
-          // highlight nav
-          $('header li a').removeClass('on');
-          $(this).addClass('on');
+        });
+
+        // scroll detect
+        var offsetTopProyectos = $('#proyectos').offset().top;
+        var offsetTopEquipo = $('#equipo').offset().top;
+        var offsetTopServicios = $('#servicios').offset().top;
+        var offsetTopContactanos = $('#contactanos').offset().top;
+
+        $(window).scroll(function () {
+          offsetTopProyectos = $('#proyectos').offset().top;
+          offsetTopEquipo = $('#equipo').offset().top;
+          offsetTopServicios = $('#servicios').offset().top;
+          offsetTopContactanos = $('#contactanos').offset().top;
+
+          if (this.scrollY < offsetTopEquipo - 200) {
+            $('header li a').removeClass('on');
+            $('header li a[href="#proyectos"]').addClass('on');
+          } else if (this.scrollY < offsetTopServicios - 200) {
+            $('header li a').removeClass('on');
+            $('header li a[href="#equipo"]').addClass('on');
+          } else if (this.scrollY < offsetTopContactanos - 200) {
+            $('header li a').removeClass('on');
+            $('header li a[href="#servicios"]').addClass('on');
+          } else if (this.scrollY > offsetTopContactanos - 200) {
+            $('header li a').removeClass('on');
+            $('header li a[href="#contactanos"]').addClass('on');
+          }
         });
       });
     </script>
